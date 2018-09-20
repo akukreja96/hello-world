@@ -1,0 +1,111 @@
+\documentclass[11pt]{article}
+
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{lscape}
+\usepackage{amsmath}
+	\newcommand{\numb}{\addtocounter{equation}{1}\tag{\theequation}}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{mathtools}
+	\newenvironment{sysmatrix}[1]
+	{\left(\begin{array}{@{}#1@{}}}
+		{\end{array}\right)}
+	\newcommand{\ro}[1]{%
+		\xrightarrow{\mathmakebox[\rowidth]{#1}}%
+	}
+	\newlength{\rowidth}% row operation width
+	\AtBeginDocument{\setlength{\rowidth}{5em}}
+\usepackage{pdfpages}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{epigraph}
+\usepackage{array}
+	\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+	\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+	\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\usepackage{multirow}
+	\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage{booktabs}
+	\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+	\renewcommand{\arraystretch}{1.3}
+\usepackage{xcolor}
+\hypersetup{
+	colorlinks,
+	linkcolor={black!50!black},
+	citecolor={black!50!black},
+	urlcolor={black!80!black}
+}
+\renewcommand{\thesubsection}{\alph{subsection}}
+\usepackage{titlesec}
+	\titleformat{\section}{\normalfont\Large\bfseries}{Question \thesection}{1em}{}
+	\titleformat{\subsection}{\normalfont\large\bfseries}{Sub Question (\thesubsection)}{1em}{}
+\usepackage{listings}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+	\usetikzlibrary{shapes.geometric,arrows}
+	\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=5cm, minimum height=1cm,text justified,draw=black,fill=red!30]
+	\tikzstyle{process} = [rectangle,minimum width=5cm,minimum height=1cm,text width=10cm,text justified,draw=black,fill=green!50]
+	\tikzstyle{decision} = [rectangle,rounded corners,minimum width=2cm,minimum height=1cm,text width=3cm,text centered,draw=black,fill=orange!30]
+	\tikzstyle{arrow} = [ultra thick,->,>=stealth]
+\usepackage{enumitem}
+
+
+% Personal commands
+\newcommand{\undbold}[1]{\textbf{\underline{#1}}}
+\newcommand{\pwr}[1]{\times10^{#1}}
+
+\begin{document}
+
+\includepdf{plagarismsheetgroup}
+
+\begin{titlepage}
+	\begin{center}
+		\vspace*{1cm}
+
+		\Huge
+		\textbf{Assignment 1}
+
+		\vspace{0.5cm}
+		\LARGE
+		AMME5271: Computational Nanotechnology
+
+		\vfill
+
+		\includegraphics[width=0.7\textwidth]{usyd_logo_high_rez}
+
+		\vfill
+
+		\begin{table}[H]
+			\centering
+			\Large
+			\begin{tabular}{@{}cc@{}}
+				\toprule
+				SID & Task allocation \\
+				\midrule
+				niro's SID & something \\
+				460311764 & something\\
+				\bottomrule
+			\end{tabular}
+		\end{table}
+	\end{center}
+\end{titlepage}
+\newpage
+
+\pagenumbering{gobble}
+\clearpage
+\thispagestyle{empty}
+\tableofcontents
+\listoftables
+\listoffigures
+
+\clearpage
+\pagenumbering{arabic}
+
+\section{Introduction}
+Some info
+
+\end{document}
